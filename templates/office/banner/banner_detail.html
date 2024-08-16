@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ banner.title }}</title>
+</head>
+<body>
+    <h1>{{ banner.title }}</h1>
+    <img src="{{ banner.image.url }}" alt="{{ banner.title }}">
+    <p><a href="{% url 'banner_update' banner.pk %}">Edit</a></p>
+    <p><a href="{% url 'banner_delete' banner.pk %}">Delete</a></p>
+    <p><a href="{% url 'banner_list' %}">Back to list</a></p>
+</body>
+</html>
